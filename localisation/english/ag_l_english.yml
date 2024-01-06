@@ -2,6 +2,8 @@
  ag_placeholder_text:0 "Placeholder"
 
 #Astral Action | Treasure Action
+ action_treasure_bag: "Treasure Bag"
+
  InfinityRootTitle: "The Infinity Root"
  InfinityRootDesc: ""
  InfinityRootOption: "todo"

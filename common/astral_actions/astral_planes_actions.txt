@@ -352,7 +352,7 @@ action_gain_engineering_insight = {
 
 action_treasure_bag = {
     sound = event_administrative_work
-    usages = 10
+    usages = 1
 
     activation_cost = {
         cost = {
@@ -361,7 +361,7 @@ action_treasure_bag = {
     }
 
     cooldown = @ASTRAL_ACTION_5_YEARS_COOLDOWN
-    picture = GFX_astral_action_summon_dimensional_fleet
+    picture = GFX_astral_action_treasure
 
     allow_unlock = {
         always = yes
@@ -369,7 +369,7 @@ action_treasure_bag = {
 
     allow = {#if still shows just slap a hidden trigger and hope that fixes it :P
         custom_tooltip = ag_placeholder_text
-            NAND = {
+            NAND = { #to stop people drawing nothing
                 exists = event_target:InfinityRootObtainer
                 exists = event_target:DaedalusSealObtainer
                 exists = event_target:EverSpinningTopObtainer
@@ -381,6 +381,7 @@ action_treasure_bag = {
         }
 
     effect = {
+        custom_tooltip = ag_placeholder_text #todo
         country_event = { id = ag_astralplanes.100 }
     }
 

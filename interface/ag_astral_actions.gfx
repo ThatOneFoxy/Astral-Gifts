@@ -1,0 +1,13 @@
+spriteTypes = {
+
+    ###########
+    # ACTIONS #
+    ###########
+
+    spriteType = {
+        name = "GFX_astral_action_treasure"
+        texturefile = "gfx/interface/icons/astral_actions/treasure_bag_astral_action.dds"
+    }
+
+
+}
