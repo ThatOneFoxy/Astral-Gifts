@@ -3,7 +3,6 @@ namespace = ag_events
 country_event = {
     id = ag_events.100
     hide_window = yes
-
     is_triggered_only = yes
 
     immediate = {
