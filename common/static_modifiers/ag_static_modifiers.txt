@@ -5,3 +5,7 @@ gain_biology_insight_modifier = {
 gain_biology_breakthrough_modifier = {
 
 }
+
+ag_midgame_astral_storage = {
+    country_resource_max_astral_threads_add = 500
+}

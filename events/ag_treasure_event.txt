@@ -1,0 +1,259 @@
+namespace = ag_astralplanes
+country_event = {
+    id = ag_astralplanes.100
+    hide_window = yes
+    is_triggered_only = yes
+
+    immediate = {
+        hidden_effect = {
+            if = {
+                limit = {
+                    NOT = { exists = event_target:InfinityRootObtainer }
+                }
+                country_event = { id = ag_astralplanes.200 }
+                save_global_event_target_as = InfinityRootObtainer
+            }
+            else = {
+                country_event = { id = ag_astralplanes.101 }
+            }
+        }
+    }
+}
+
+country_event = {
+    id = ag_astralplanes.101
+    hide_window = yes
+    is_triggered_only = yes
+
+    immediate = {
+        hidden_effect = {
+            if = {
+                limit = {
+                    NOT = { exists = event_target:DaedalusSealObtainer }
+                }
+                country_event = { id = ag_astralplanes.201 }
+                save_global_event_target_as = DaedalusSealObtainer
+            }
+            else = {
+                country_event = { id = ag_astralplanes.102 }
+            }
+        }
+    }
+}
+
+country_event = {
+    id = ag_astralplanes.102
+    hide_window = yes
+    is_triggered_only = yes
+
+    immediate = {
+        hidden_effect = {
+            if = {
+                limit = {
+                    NOT = { exists = event_target:EverSpinningTopObtainer }
+                }
+                country_event = { id = ag_astralplanes.202 }
+                save_global_event_target_as = EverSpinningTopObtainer
+            }
+            else = {
+                country_event = { id = ag_astralplanes.103 }
+            }
+        }
+    }
+}
+
+country_event = {
+    id = ag_astralplanes.103
+    hide_window = yes
+    is_triggered_only = yes
+
+    immediate = {
+        hidden_effect = {
+            if = {
+                limit = {
+                    NOT = { exists = event_target:CelestialTearObtainer }
+                }
+                country_event = { id = ag_astralplanes.203 }
+                save_global_event_target_as = CelestialTearObtainer
+            }
+            else = {
+                country_event = { id = ag_astralplanes.104 }
+            }
+        }
+    }
+}
+
+country_event = {
+    id = ag_astralplanes.104
+    hide_window = yes
+    is_triggered_only = yes
+
+    immediate = {
+        hidden_effect = {
+            if = {
+                limit = {
+                    NOT = { exists = event_target:ContinuumObtainer }
+                }
+                country_event = { id = ag_astralplanes.204 }
+                save_global_event_target_as = ContinuumObtainer
+            }
+            else = {
+                country_event = { id = ag_astralplanes.105 }
+            }
+        }
+    }
+}
+
+country_event = {
+    id = ag_astralplanes.105
+    hide_window = yes
+    is_triggered_only = yes
+
+    immediate = {
+        hidden_effect = {
+            if = {
+                limit = {
+                    NOT = { exists = event_target:TimeCrystalObtainer }
+                }
+                country_event = { id = ag_astralplanes.205 }
+                save_global_event_target_as = TimeCrystalObtainer
+            }
+            else = {
+                country_event = { id = ag_astralplanes.106 }
+            }
+        }
+    }
+}
+
+country_event = {
+    id = ag_astralplanes.106
+    hide_window = yes
+    is_triggered_only = yes
+
+    immediate = {
+        hidden_effect = {
+            if = {
+                limit = {
+                    NOT = { exists = event_target:PlasmicCoreObtainer }
+                }
+                country_event = { id = ag_astralplanes.206 }
+                save_global_event_target_as = PlasmicCoreObtainer
+            }
+            else = {
+                country_event = { id = ag_astralplanes.107 }
+            }
+        }
+    }
+}
+
+country_event = {
+    id = ag_astralplanes.107
+    hide_window = yes
+    is_triggered_only = yes
+
+    immediate = {
+        hidden_effect = {
+            add_resource_astral_threads = { VALUE = 1750 }
+            }
+        }
+    }
+
+
+#relic triggers
+country_event = {
+    id = ag_astralplanes.200
+    title = ag_placeholder_text
+
+    is_triggered_only = yes
+
+    option = {
+        name = ag_placeholder_text
+        hidden_effect = {
+            add_relic = r_infinity_root
+        }
+    }
+}
+
+country_event = {
+    id = ag_astralplanes.201
+    title = ag_placeholder_text
+
+    is_triggered_only = yes
+
+    option = {
+        name = ag_placeholder_text
+        hidden_effect = {
+            add_relic = r_daedalus_seal
+        }
+    }
+}
+
+country_event = {
+    id = ag_astralplanes.202
+    title = ag_placeholder_text
+
+    is_triggered_only = yes
+
+    option = {
+        name = ag_placeholder_text
+        hidden_effect = {
+            add_relic = r_ever_spinning_top
+        }
+    }
+}
+
+country_event = {
+    id = ag_astralplanes.203
+    title = ag_placeholder_text
+
+    is_triggered_only = yes
+
+    option = {
+        name = ag_placeholder_text
+        hidden_effect = {
+            add_relic = r_celestial_tear
+        }
+    }
+}
+
+country_event = {
+    id = ag_astralplanes.204
+    title = ag_placeholder_text
+
+    is_triggered_only = yes
+
+    option = {
+        name = ag_placeholder_text
+        hidden_effect = {
+            add_relic = r_continuum
+        }
+    }
+}
+
+country_event = {
+    id = ag_astralplanes.205
+    title = ag_placeholder_text
+
+    is_triggered_only = yes
+
+    option = {
+        name = ag_placeholder_text
+        hidden_effect = {
+            add_relic = r_time_crystal
+        }
+    }
+}
+
+country_event = {
+    id = ag_astralplanes.206
+    title = ag_placeholder_text
+
+    is_triggered_only = yes
+
+    option = {
+        name = ag_placeholder_text
+        hidden_effect = {
+            add_relic = r_plasmic_core
+        }
+    }
+}
