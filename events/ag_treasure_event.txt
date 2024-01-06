@@ -1,4 +1,5 @@
 namespace = ag_astralplanes
+
 country_event = {
     id = ag_astralplanes.100
     hide_window = yes
@@ -162,12 +163,13 @@ country_event = {
 #relic triggers
 country_event = {
     id = ag_astralplanes.200
-    title = ag_placeholder_text
+    title = InfinityRootTitle
+    desc = InfinityRootDesc
 
     is_triggered_only = yes
 
     option = {
-        name = ag_placeholder_text
+        name = InfinityRootOption
         hidden_effect = {
             add_relic = r_infinity_root
         }
@@ -176,12 +178,13 @@ country_event = {
 
 country_event = {
     id = ag_astralplanes.201
-    title = ag_placeholder_text
+    title = DaedalusSealTitle
+    desc = DaedalusSealDesc
 
     is_triggered_only = yes
 
     option = {
-        name = ag_placeholder_text
+        name = DaedalusSealOption
         hidden_effect = {
             add_relic = r_daedalus_seal
         }
@@ -190,12 +193,13 @@ country_event = {
 
 country_event = {
     id = ag_astralplanes.202
-    title = ag_placeholder_text
+    title = EverSpinningTopTitle
+    desc = EverSpinningTopDesc
 
     is_triggered_only = yes
 
     option = {
-        name = ag_placeholder_text
+        name = EverSpinningTopOption
         hidden_effect = {
             add_relic = r_ever_spinning_top
         }
@@ -204,12 +208,13 @@ country_event = {
 
 country_event = {
     id = ag_astralplanes.203
-    title = ag_placeholder_text
+    title = CelestialTearTitle
+    desc = CelestialTearDesc
 
     is_triggered_only = yes
 
     option = {
-        name = ag_placeholder_text
+        name = CelestialTearOption
         hidden_effect = {
             add_relic = r_celestial_tear
         }
@@ -218,12 +223,13 @@ country_event = {
 
 country_event = {
     id = ag_astralplanes.204
-    title = ag_placeholder_text
+    title =  ContinuumTitle
+    desc = ContinuumDesc
 
     is_triggered_only = yes
 
     option = {
-        name = ag_placeholder_text
+        name = ContinuumOption
         hidden_effect = {
             add_relic = r_continuum
         }
@@ -232,12 +238,13 @@ country_event = {
 
 country_event = {
     id = ag_astralplanes.205
-    title = ag_placeholder_text
+    title = TimeCrystalTitle
+    desc = TimeCrystalDesc
 
     is_triggered_only = yes
 
     option = {
-        name = ag_placeholder_text
+        name = TimeCrystalOption
         hidden_effect = {
             add_relic = r_time_crystal
         }
@@ -246,12 +253,13 @@ country_event = {
 
 country_event = {
     id = ag_astralplanes.206
-    title = ag_placeholder_text
+    title = PlasmicCoreTitle
+    desc = PlasmicCoreDesc
 
     is_triggered_only = yes
 
     option = {
-        name = ag_placeholder_text
+        name = PlasmicCoreOption
         hidden_effect = {
             add_relic = r_plasmic_core
         }

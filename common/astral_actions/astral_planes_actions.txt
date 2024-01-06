@@ -217,6 +217,41 @@ action_summon_dimensional_fleet = {
     }
 }
 
+action_gain_physics_insight = {
+    sound = event_administrative_work
+
+    activation_cost = {
+        cost = {
+            astral_threads = 1
+            multiplier = value:scaled_astral_action_cost|BASE|250|INCREASE|50|INCREASE_VARIABLE|physics_insight_usage_count|MAX|1750|
+        }
+    }
+
+    allow_unlock = {
+        has_technology = tech_physics_1
+    }
+
+    cooldown = @ASTRAL_ACTION_5_YEARS_COOLDOWN
+    picture = GFX_astral_action_gain_physics_insight
+
+    effect = {
+        add_modifier = {
+            modifier = gain_physics_insight_modifier
+            days = @ASTRAL_ACTION_5_YEARS_COOLDOWN
+        }
+        hidden_effect = {
+            change_variable = {
+                which = physics_insight_usage_count
+                value = 1
+            }
+        }
+    }
+
+    ai_weight = {
+        weight = 100
+    }
+}
+
 action_gain_biology_insight = {
     sound = event_administrative_work
 
@@ -342,7 +377,6 @@ action_treasure_bag = {
                 exists = event_target:ContinuumObtainer
                 exists = event_target:TimeCrystalObtainer
                 exists = event_target:PlasmicCoreObtainer
-
             }
         }
 
@@ -350,41 +384,6 @@ action_treasure_bag = {
         country_event = { id = ag_astralplanes.100 }
     }
 
-}
-
-action_gain_physics_insight = {
-    sound = event_administrative_work
-
-    activation_cost = {
-        cost = {
-            astral_threads = 1
-            multiplier = value:scaled_astral_action_cost|BASE|250|INCREASE|50|INCREASE_VARIABLE|physics_insight_usage_count|MAX|1750|
-        }
-    }
-
-    allow_unlock = {
-        has_technology = tech_physics_1
-    }
-
-    cooldown = @ASTRAL_ACTION_5_YEARS_COOLDOWN
-    picture = GFX_astral_action_gain_physics_insight
-
-    effect = {
-        add_modifier = {
-            modifier = gain_physics_insight_modifier
-            days = @ASTRAL_ACTION_5_YEARS_COOLDOWN
-        }
-        hidden_effect = {
-            change_variable = {
-                which = physics_insight_usage_count
-                value = 1
-            }
-        }
-    }
-
-    ai_weight = {
-        weight = 100
-    }
 }
 
 action_hyper_relay_insight = {

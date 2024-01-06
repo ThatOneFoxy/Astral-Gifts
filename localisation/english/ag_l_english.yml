@@ -1,2 +1,32 @@
 ﻿l_english:
  ag_placeholder_text:0 "Placeholder"
+
+#Astral Action | Treasure Action
+ InfinityRootTitle: "The Infinity Root"
+ InfinityRootDesc: ""
+ InfinityRootOption: ""
+
+ DaedalusSealTitle: "Daedalus Seal"
+ DaedalusSealDesc: ""
+ DaedalusSealOption: "Interesting... Add it to our Archives!"
+
+ EverSpinningTopTitle: "Ever Spinning Top"
+ EverSpinningTopDesc: ""
+ EverSpinningTopOption: "Its... Mesmerizing"
+
+ CelestialTearTitle: "Celestial Tear"
+ CelestialTearDesc: ""
+ CelestialTearOption: "I wonder where this is from."
+
+ ContinuumTitle: "The Continuum"
+ ContinuumDesc: ""
+ ContinuumOption: "todo"
+
+ TimeCrystalTitle: "Time Crystal"
+ TimeCrystalDesc: ""
+ TimeCrystalOption: "Infinite visions of the past.. What was, will be"
+
+ PlasmicCoreTitle: "Plasmic Core"
+ PlasmicCoreDesc: ""
+ PlasmicCoreOption: "They do say that the mitochondria is the powerhouse of the cell"
+
