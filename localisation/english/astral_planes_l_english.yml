@@ -43,18 +43,21 @@
  MESSAGE_DIMENSIONAL_FLEET_DESTROYED_TITLE: "Dimensional Fleet Returned"
  MESSAGE_DIMENSIONAL_FLEET_DESTROYED_DESC: "The Dimensional Fleet we summoned has returned to its original plane of existence. No trace of it remains."
 
- action_gain_biology_insight: "Whispers of the Void"
- action_gain_biology_insight_desc: "this is the best description"
- action_gain_biology_insight_tooltip: "lol"
-
  action_astral_splitting: "Astral Splitting"
  action_astral_splitting_desc: "By weaving extra $ASTRAL_THREADS_ICON$ into the delicate fabric of space, we should be able to create an artificial tear in reality. Doing this too often would put the galaxy in danger of unravelling entirely."
  action_astral_splitting_no_rift_spawning_location: "$TRIGGER_FAIL$§RThere are no valid systems in which we can split open a new Rift.§!"
  action_astral_splitting_tooltip: "Create an $ASTRAL_RIFT$ in a random system you control.\nMust control a system without any adjacent $ASTRAL_RIFTS$."
  action_astral_splitting_too_many_rifts: "$TRIGGER_FAIL$§RWe have pushed our capacity to forcefully open new rifts in space and time to its limit.§!"
 
- action_gain_physics_insight: "Gain Physics Insight"
+ action_gain_physics_insight: "Astral Theory"
  action_gain_physics_insight_desc: "Allow our scientists to requisition $ASTRAL_THREADS_ICON$ to further our understanding of physics."
+
+ action_gain_engineering_insight: "Supersolid Quantum Materials"
+ action_gain_engineering_insight_desc: "REPLACE_ME"
+
+ action_gain_biology_insight: "Biology of the Void"
+ action_gain_biology_insight_desc: "REPLACE_ME"
+ action_gain_biology_insight_tooltip: "REPLACE_ME"
 
  action_lateral_artifacting: "Lateral Artifacting"
  action_lateral_artifacting_desc: "We can manipulate the flow of time to make use of two powerful artifacts at once."

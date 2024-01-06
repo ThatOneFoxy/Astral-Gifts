@@ -6,7 +6,7 @@
 
  InfinityRootTitle: "The Infinity Root"
  InfinityRootDesc: ""
- InfinityRootOption: "todo"
+ InfinityRootOption: "Huh, So this is the root of all our problems."
 
  DaedalusSealTitle: "Daedalus Seal"
  DaedalusSealDesc: ""
@@ -22,7 +22,7 @@
 
  ContinuumTitle: "The Continuum"
  ContinuumDesc: ""
- ContinuumOption: "todo"
+ ContinuumOption: "To continue or to stop, that is the question"
 
  TimeCrystalTitle: "Time Crystal"
  TimeCrystalDesc: ""
@@ -31,4 +31,10 @@
  PlasmicCoreTitle: "Plasmic Core"
  PlasmicCoreDesc: ""
  PlasmicCoreOption: "They do say that the mitochondria is the powerhouse of the cell"
+
+# Astral | Luminarium
+
+ ap_luminarium: "REPLACE_ME"
+ ap_luminarium_desc: "REPLACE_ME"
+
 

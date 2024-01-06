@@ -256,7 +256,7 @@ action_gain_biology_insight = {
     sound = event_administrative_work
 
     allow_unlock = {
-        has_technology = tech_gene_tailoring
+        has_technology = tech_genome_mapping
     }
 
     activation_cost = {
@@ -272,18 +272,15 @@ action_gain_biology_insight = {
     effect = {
         custom_tooltip = ag_placeholder_text
         random = {
-            chance = 95
+            chance = 90
             add_modifier = {
                 modifier = gain_biology_insight_modifier
                 days = @ASTRAL_ACTION_5_YEARS_COOLDOWN
             }
         }
         random = {
-            chance = 5
-            add_modifier = {
-                modifier = gain_physics_insight_modifier
-                days = @ASTRAL_ACTION_5_YEARS_COOLDOWN
-            }
+            chance = 10
+            country_event = { id = ag_events.2000 }
         }
 
 
@@ -321,18 +318,15 @@ action_gain_engineering_insight = {
     effect = {
         custom_tooltip = ag_placeholder_text
         random = {
-            chance = 95
+            chance = 90
             add_modifier = {
-                modifier = gain_biology_insight_modifier
+                modifier = gain_engineering_insight_modifier
                 days = @ASTRAL_ACTION_5_YEARS_COOLDOWN
             }
         }
         random = {
-            chance = 5
-            add_modifier = {
-                modifier = gain_physics_insight_modifier
-                days = @ASTRAL_ACTION_5_YEARS_COOLDOWN
-            }
+            chance = 10
+            country_event = { id = ag_events.2001 }
         }
 
 

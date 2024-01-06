@@ -13,18 +13,17 @@ event = {
 
 	trigger = {
 		has_astral_planes_dlc = yes
-		always = no
 	}
 
 	immediate = {
 		get_galaxy_setup_value = {
 			setting = num_stars
-			which = local_astral_rifts_num
+			which = local_astral_scar_num
 			scale_by = 0.1
 		}
 
 		while = {
-			count = local_astral_rifts_num
+			count = local_astral_scar_num
 
 			reroll_random = yes
 
@@ -36,7 +35,7 @@ event = {
 							exists = owner
 						}
 					}
-					can_spawn_astral_rift_natural_generation = yes
+					can_spawn_astral_scar_natural_generation = yes
 				}
 
 				weights = {
@@ -49,125 +48,22 @@ event = {
 	}
 }
 
-# Progressive Astral Rifts spawn
+# Progressive Astral Scar spawn
 event = {
 	id = astral_planes.2
 	hide_window = yes
-
 	is_triggered_only = yes
 
 	trigger = {
 		has_astral_planes_dlc = yes
 		mid_game_years_passed >= 0
-		always = no
 	}
 
 	immediate = {
 		every_playable_country = {
-			limit = {
-				NOT = { has_country_flag = astral_rift_spawn_moratorium }
-				is_astral_rift_pool_empty = no
+			random_planet_within_border = {
+				spawn_astral_scar = yes
 			}
-
-			export_trigger_value_to_variable = {
-				trigger = count_system_within_border
-				parameters = {
-					limit = {
-						can_spawn_astral_rift_or_split_astral_scar = yes
-					}
-				}
-				variable = progressive_rift_valid_systems
-			}
-
-			if = {
-				limit = {
-					check_variable = {
-						which = progressive_rift_valid_systems
-						value > 0
-					}
-				}
-
-				change_variable = {
-					which = years_passed_since_last_rift_spawn
-					value = 1
-				}
-
-				set_variable_to_random_value = {
-					which = astral_rift_spawn_roll
-					min = 0
-					max = 100
-				}
-
-				if = {
-					limit = {
-						astral_rifts_completed >= @progressive_rift_additional_difficulty_threshold
-					}
-					change_variable = {
-						which = astral_rift_spawn_roll
-						value = @progressive_rift_additional_difficulty_past_threshold
-					}
-				}
-			}
-			else = {
-				clear_variable = progressive_rift_valid_systems
-			}
-		}
-
-		every_playable_country = {
-			limit = {
-				is_variable_set = progressive_rift_valid_systems
-			}
-
-			if = {
-				limit = {
-					check_variable_arithmetic  = {
-						which = years_passed_since_last_rift_spawn
-						multiply = @progressive_rift_spawn_chance_per_year
-						multiply = value:progressive_rifts_additional_weight
-						multiply = @progressive_rift_system_count_weight_inverted
-						add = progressive_rift_valid_systems
-						divide = @progressive_rift_system_count_weight_inverted
-						value > astral_rift_spawn_roll
-					}
-				}
-
-				random_planet_within_border = {
-					limit = {
-						is_astral_scar = yes
-						has_anomaly = no
-					}
-
-					log = "Splitting Astral Scar to an Astral Rift in system [This.System.GetName] for country [Prev.GetName]."
-					split_astral_scar = yes
-					prev = {
-						set_timed_country_flag = {
-							flag = astral_rift_spawn_moratorium
-							years = @astral_rift_spawn_moratorium_years
-						}
-					}
-				}
-
-				if = {
-					limit = {
-						NOT = { has_country_flag = astral_rift_spawn_moratorium }
-					}
-					random_system_within_border = {
-						limit = {
-							can_spawn_astral_rift_natural_generation = yes
-						}
-						log = "Spawning Astral Scar in system [This.GetName] for country [Prev.GetName]."
-						spawn_astral_scar = yes
-					}
-					set_timed_country_flag = {
-						flag = astral_rift_spawn_moratorium
-						years = @astral_rift_spawn_moratorium_years
-					}
-				}
-
-				clear_variable = years_passed_since_last_rift_spawn
-			}
-			clear_variable = progressive_rift_valid_systems
-			clear_variable = astral_rift_spawn_roll
 		}
 	}
 }

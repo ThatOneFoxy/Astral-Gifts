@@ -10,73 +10,122 @@ country_event = {
     }
 }
 
-event = {
-    id = astral_planes.1
+country_event = {
+    id = ag_events.2000
     hide_window = yes
-
     is_triggered_only = yes
 
-    trigger = {
-        has_astral_planes_dlc = yes
-    }
-
     immediate = {
-        get_galaxy_setup_value = {
-            setting = num_stars
-            which = local_astral_scar_num
-            scale_by = 0.1
-        }
-
-        while = {
-            count = local_astral_scar_num
-
-            reroll_random = yes
-
-            random_system = {
-                limit = {
-                    NOR = {
-                        exists = owner
-                        any_neighbor_system = {
-                            exists = owner
-                        }
-                    }
-                    can_spawn_astral_rift_natural_generation = yes
+        inverted_switch = {
+            trigger = has_technology
+            tech_genome_mapping = {
+                add_tech_progress = {
+                    tech = tech_genome_mapping
+                    progress = @agenda_award_tech_progress
                 }
-
-                weights = {
-                    inline_script = "astral_rift/spawn_weights"
+            }
+            tech_gene_tailoring = {
+                add_tech_progress = {
+                    tech = tech_gene_tailoring
+                    progress = @agenda_award_tech_progress
                 }
-
-                spawn_astral_scar = yes
+            }
+            tech_glandular_acclimation = {
+                add_tech_progress = {
+                    tech = tech_glandular_acclimation
+                    progress = @agenda_award_tech_progress
+                }
+            }
+            tech_gene_expressions = {
+                add_tech_progress = {
+                    tech = tech_gene_expressions
+                    progress = @agenda_award_tech_progress
+                }
+            }
+            tech_gene_seed_purification = {
+                add_tech_progress = {
+                    tech = tech_gene_seed_purification
+                    progress = @agenda_award_tech_progress
+                }
+            }
+            default = {
+                add_monthly_resource_mult = {
+                    resource = society_research
+                    value = @tier3researchreward
+                    min = @tier3researchmin
+                    max = @tier3researchmax
+                }
             }
         }
     }
 }
 
-# Progressive Astral Scar spawn
-event = {
-    id = astral_planes.2
+country_event = {
+    id = ag_events.2001
     hide_window = yes
-
     is_triggered_only = yes
 
-    trigger = {
-        has_astral_planes_dlc = yes
-        mid_game_years_passed >= 0
-    }
-
     immediate = {
-        every_playable_country = {
-            limit = {
-                NOT = { has_country_flag = astral_rift_spawn_moratorium }
-                is_astral_rift_pool_empty = no
-            }
-            random_planet_within_border = {
-                limit = {
-                    is_astral_scar = no
+        inverted_switch = {
+            trigger = has_technology
+            tech_powered_exoskeletons = {
+                add_tech_progress = {
+                    tech = tech_powered_exoskeletons
+                    progress = @agenda_award_tech_progress
                 }
-                spawn_astral_scar = yes
+            }
+            tech_robotic_workers = {
+                add_tech_progress = {
+                    tech = tech_robotic_workers
+                    progress = @agenda_award_tech_progress
+                }
+            }
+            tech_droid_workers = {
+                add_tech_progress = {
+                    tech = tech_droid_workers
+                    progress = @agenda_award_tech_progress
+                }
+            }
+            tech_administrative_ai = {
+                add_tech_progress = {
+                    tech = tech_administrative_ai
+                    progress = @agenda_award_tech_progress
+                }
+            }
+            tech_self_aware_logic = {
+                add_tech_progress = {
+                    tech = tech_self_aware_logic
+                    progress = @agenda_award_tech_progress
+                }
+            }
+            tech_sapient_ai = {
+                add_tech_progress = {
+                    tech = tech_sapient_ai
+                    progress = @agenda_award_tech_progress
+                }
+            }
+            tech_synthetic_workers = {
+                add_tech_progress = {
+                    tech = tech_synthetic_workers
+                    progress = @agenda_award_tech_progress
+                }
+            }
+            tech_synthetic_leaders = {
+                add_tech_progress = {
+                    tech = tech_synthetic_leaders
+                    progress = @agenda_award_tech_progress
+                }
+            }
+            default = {
+                add_monthly_resource_mult = {
+                    resource = engineering_research
+                    value = @tier3researchreward
+                    min = @tier3researchmin
+                    max = @tier3researchmax
+                }
             }
         }
     }
 }
+
+

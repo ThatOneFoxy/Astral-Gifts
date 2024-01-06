@@ -2,10 +2,10 @@ gain_biology_insight_modifier = {
     country_society_research_produces_mult = 0.1
 }
 
-gain_biology_breakthrough_modifier = {
-
+gain_engineering_insight_modifier = {
+    country_engineering_research_produces_mult = 0.1
 }
-
+#astralstorage
 ag_midgame_astral_storage = {
     country_resource_max_astral_threads_add = 500
 }
