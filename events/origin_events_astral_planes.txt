@@ -26,26 +26,8 @@ country_event = {
 			message = no
 		}
 		capital_scope = {
-			solar_system = {				
-				spawn_astral_scar = {
-					relative_to = prev
-					orbit_distance = 60
-					orbit_angle = 340
-					tolerance = 360
-					id = riftworld
-					spawn_sound = no
-				}
-				astral_rift = {
-					create_research_station = { owner = root }
-				}
-				prevprev = {
-					country_event = {
-						id = astral_planes.101
-						days = 10080
-						random = 1440
-						scopes = { from = prev.astral_rift }
-					}
-				}
+			solar_system = {
+				spawn_astral_scar = yes
 			}
 			planet_event = { id = astral_planes.2120 }
 		}
