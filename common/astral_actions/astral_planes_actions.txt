@@ -221,122 +221,51 @@ action_summon_dimensional_fleet = {
     }
 }
 
-#action_astral_splitting = { either replace this with something new, or delete it
-#    sound = rift_open
-#    usages = 4
-#
-#    activation_cost = {
-#        cost = {
-#            astral_threads = 1
-#            multiplier = value:scaled_astral_action_cost|BASE|300|INCREASE|300|INCREASE_VARIABLE|num_rifts_splitted|MAX|1200|
-#        }
-#    }
-#
-#    cooldown = @ASTRAL_ACTION_10_YEARS_COOLDOWN
-#    picture = GFX_astral_action_astral_splitting
-#
-#    allow_unlock = {
-#        has_technology = tech_rift_sphere
-#    }
-#
-#    allow = {
-#        custom_tooltip = {
-#            fail_text = "action_astral_splitting_too_many_rifts"
-#            check_variable = {
-#                which = num_rifts_splitted
-#                value < 4
-#            }
-#            is_astral_rift_pool_empty = no
-#        }
-#        custom_tooltip = {
-#            fail_text = "action_astral_splitting_no_rift_spawning_location"
-#            any_system_within_border = {
-#                can_spawn_astral_rift = yes
-#            }
-#        }
-#    }
-#
-#    effect = {
-#        custom_tooltip = "action_astral_splitting_tooltip"
-#
-#        hidden_effect = {
-#            change_variable = {
-#                which = num_rifts_splitted
-#                value = 1
-#            }
-#
-#            random_system_within_border = {
-#                limit = {
-#                    can_spawn_astral_rift = yes
-#                }
-#
-#                weights = {
-#                    inline_script = "astral_rift/spawn_weights"
-#                    modifier = {
-#                        factor = 0.25
-#                        any_system = {
-#                            distance = {
-#                                source = prev
-#                                min_jumps  = 2
-#                                max_jumps = 2
-#                            }
-#                            OR = {
-#                                has_astral_rift = yes
-#                                any_system_planet = {
-#                                    is_astral_scar = yes
-#                                }
-#                            }
-#                        }
-#                    }
-#                    modifier = {
-#                        factor = 0.5
-#                        any_system = {
-#                            distance = {
-#                                source = prev
-#                                min_jumps  = 2
-#                                max_jumps = 4
-#                            }
-#                            OR = {
-#                                has_astral_rift = yes
-#                                any_system_planet = {
-#                                    is_astral_scar = yes
-#                                }
-#                            }
-#                        }
-#                    }
-#                }
-#
-#                spawn_astral_rift = {
-#                    random_pos = yes
-#                    orbit_angle = 360
-#                    spawn_sound = no
-#                }
-#            }
-#        }
-#    }
-#
-#    ai_weight = {
-#        weight = 0
-#        modifier = {
-#            add = 200
-#            count_owned_leader = {
-#                count >= 2
-#                limit = {
-#                    leader_class = scientist
-#                }
-#            }
-#        }
-#        modifier = {
-#            add = 100
-#            count_owned_leader = {
-#                count > 2
-#                limit = {
-#                    leader_class = scientist
-#                }
-#            }
-#        }
-#    }
-#}
+action_gain_biology_insight = {
+    sound = event_administrative_work
+    unlock_threshold = 1
+
+    activation_cost = {
+        cost = {
+            astral_threads = 1
+            multiplier = value:scaled_astral_action_cost|BASE|250|INCREASE|50|INCREASE_VARIABLE|biology_insight_usage_count|MAX|1750|
+        }
+    }
+
+    cooldown = @ASTRAL_ACTION_5_YEARS_COOLDOWN
+    picture = GFX_astral_action_gain_physics_insight
+
+    effect = {
+        custom_tooltip = ag_placeholder_text
+        random = {
+            chance = 95
+            add_modifier = {
+                modifier = gain_biology_insight_modifier
+                days = @ASTRAL_ACTION_5_YEARS_COOLDOWN
+            }
+        }
+        random = {
+            chance = 5
+            add_modifier = {
+                modifier = gain_physics_insight_modifier
+                days = @ASTRAL_ACTION_5_YEARS_COOLDOWN
+            }
+        }
+
+
+
+        hidden_effect = {
+            change_variable = {
+                which = biology_insight_usage_count
+                value = 1
+            }
+        }
+    }
+
+    ai_weight = {
+        weight = 100
+    }
+}
 
 action_gain_physics_insight = {
     sound = event_administrative_work

@@ -43,6 +43,10 @@
  MESSAGE_DIMENSIONAL_FLEET_DESTROYED_TITLE: "Dimensional Fleet Returned"
  MESSAGE_DIMENSIONAL_FLEET_DESTROYED_DESC: "The Dimensional Fleet we summoned has returned to its original plane of existence. No trace of it remains."
 
+ action_gain_biology_insight: "Whispers of the Void"
+ action_gain_biology_insight_desc: "this is the best description"
+ action_gain_biology_insight_tooltip: "lol"
+
  action_astral_splitting: "Astral Splitting"
  action_astral_splitting_desc: "By weaving extra $ASTRAL_THREADS_ICON$ into the delicate fabric of space, we should be able to create an artificial tear in reality. Doing this too often would put the galaxy in danger of unravelling entirely."
  action_astral_splitting_no_rift_spawning_location: "$TRIGGER_FAIL$§RThere are no valid systems in which we can split open a new Rift.§!"
