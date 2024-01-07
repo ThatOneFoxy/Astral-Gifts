@@ -1,3 +1,0 @@
-UnlocksAstralActionAg = {
-    category = country
-}

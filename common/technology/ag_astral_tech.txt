@@ -10,11 +10,7 @@ tech_astral_hyperlane_breaching = {
     }
     weight = @tier2weight2
 
-    modifier = {
-        UnlocksAstralActionAg
-    }
-
-    feature_flags = { experimental_subspace_navigation }
+    feature_flags = { experimental_subspace_navigation_ag }
 
     weight_modifier = {
         modifier = {

@@ -51,8 +51,9 @@
 
  tech_astral_hyperlane_breaching: "Astral Hyperlane Breaching"
  tech_astral_hyperlane_breaching_desc: "With new ways learned we might be able to use astral threads in order to summon things from an alternate dimension"
- mod_UnlocksAstralActionAg: "Unlocks the Summon Dimensional Fleet astral action."
-
+ feature_experimental_subspace_navigation_ag: "Summon Dimensional Fleet astral action."
+ feature_experimental_subspace_navigation_ag_desc: "$tech_astral_hyperlane_breaching_desc$"
+ 
 # Astral | riftworld
  ag_ancesteral_past_cultural: "Ancestral Past"
  ag_ancesteral_past_weapons: "$ag_ancesteral_past_cultural$"
