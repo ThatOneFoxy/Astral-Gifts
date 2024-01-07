@@ -1,7 +1,0 @@
-spriteTypes = {
-    spriteType = {
-        name = "GFX_tech_astral_hyperlane_breaching"
-        texturefile = "gfx/interface/icons/ascension_perks/ap_luminarium.dds"
-        alwaystransparent = yes
-    }
-}

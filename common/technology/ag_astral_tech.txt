@@ -10,7 +10,9 @@ tech_astral_hyperlane_breaching = {
     }
     weight = @tier2weight2
 
-    icon = GFX_tech_astral_hyperlane_breaching
+    modifier = {
+        UnlocksAstralActionAg
+    }
 
     feature_flags = { experimental_subspace_navigation }
 

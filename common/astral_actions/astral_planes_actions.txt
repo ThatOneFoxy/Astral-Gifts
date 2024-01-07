@@ -751,6 +751,9 @@ action_planar_mastery = {
 
     allow_unlock = {
         has_technology = tech_galactic_administration
+        hidden_trigger = {
+            has_country_flag = riftworldoriginag
+        }
     }
 
     picture = GFX_astral_action_planar_mastery

@@ -7,6 +7,7 @@ on_mid_game_pulse_country = {
 on_yearly_pulse_country = {
     events = {
         ag_events.3000
+        ag_events.101
     }
 }
 

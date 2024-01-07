@@ -12,6 +12,24 @@ country_event = {
 }
 
 country_event = {
+    id = ag_events.101
+    hide_window = yes
+    is_triggered_only = yes
+
+    trigger = {
+        NOT = {
+            has_country_flag = riftworldoriginag
+        }
+        owner = {
+            has_origin = origin_riftworld
+        }
+    }
+    immediate = {
+        set_country_flag = riftworldoriginag
+    }
+}
+
+country_event = {
     id = ag_events.2000
     hide_window = yes
     is_triggered_only = yes
