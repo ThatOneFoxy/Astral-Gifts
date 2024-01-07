@@ -205,24 +205,8 @@ fleet_event = {
 fleet_event = {
 	id = astral_planes.2140
 	title = astral_planes.2140.name
-	desc = {
-		trigger = {
-			controller = {
-				has_technology = tech_rift_sphere
-			}
-		}
-		text = astral_planes.2140.desc.has_rift_sphere
-	}
-	desc = {
-		trigger = {
-			NOT = {
-				controller = {
-					has_technology = tech_rift_sphere
-				}
-			}
-		}
-		text = astral_planes.2140.desc.default
-	}
+	desc = astral_planes.2140.desc.has_rift_sphere
+
 	picture = GFX_evt_riftworld_archsite_ancestors
 	show_sound = ap_rift_event_0_astral_wonder
 	location = from
@@ -239,37 +223,18 @@ fleet_event = {
 	}
 
 	option = {
-		name = astral_planes.2140.a
+		name = ag_astral_planes.2140.a
 		small_artifact_reward = yes
 		controller = {
-			if = {
-				limit = {
-					NOT = {
-						has_technology = tech_rift_sphere
-					}
-				}
-				add_tech_progress = {
-					tech = tech_rift_sphere
-					progress = 0.5
-				}
-				if = {
-					limit = {
-						any_situation = { is_situation_type = situation_a_rift_in_space }
-					}
-					every_situation = {
-						limit = { is_situation_type = situation_a_rift_in_space }
-						destroy_situation = this
-					}
-				}
-			}
-			else = {
-				add_monthly_resource_mult = {
-					resource = unity
-					value = @tier2unityreward
-					min = @tier2unitymin
-					max = @tier2unitymax
-				}
-			}
+				add_modifier = { modifier = ag_ancesteral_past_cultural }
+			set_country_flag = riftworld_digsite_completed
+		}
+	}
+	option = {
+		name = ag_astral_planes.2140.b
+		small_artifact_reward = yes
+		controller = {
+			add_modifier = { modifier = ag_ancesteral_past_weapons }
 			set_country_flag = riftworld_digsite_completed
 		}
 	}

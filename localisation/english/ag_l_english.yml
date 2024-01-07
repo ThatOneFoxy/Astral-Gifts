@@ -38,4 +38,16 @@
  ap_luminarium_desc: "You hear faint whispers"
  requires_ascension_perks_4: "$TRIGGER_FAIL$Requires four other Ascension Perks to be selected first."
 
+# Astral | Tech
+
+ tech_astral_hyperlane_breaching: "Astral Hyperlane Breaching"
+ tech_astral_hyperlane_breaching_desc: "With new ways learned we might be able to use astral threads in order to summon things from an alternate dimension"
+
+# Astral | riftworld
+ ag_ancesteral_past_cultural: "Ancestral Past"
+ ag_ancesteral_past_weapons: "$ag_ancesteral_past_cultural$"
+
+ ag_astral_planes.2140.a: "We should adopt the culture of our ancestors."
+ ag_astral_planes.2140.b: "We will take out those who have wronged us in the past."
+
 

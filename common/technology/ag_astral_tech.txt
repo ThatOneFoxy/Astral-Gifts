@@ -1,0 +1,32 @@
+tech_astral_hyperlane_breaching = {
+    area = physics
+    cost = 25000
+    category = { field_manipulation }
+    tier = 4
+    is_rare = yes
+    prerequisites = {
+        tech_experimental_subspace_navigation
+        tech_gateway_construction
+    }
+    weight = @tier2weight2
+
+    icon = GFX_tech_astral_hyperlane_breaching
+
+    feature_flags = { experimental_subspace_navigation }
+
+    weight_modifier = {
+        modifier = {
+            factor = @ap_grasp_the_void_travel_tech
+            has_ascension_perk = ap_grasp_the_void
+        }
+        modifier = {
+            factor = @eager_explorer_effect
+            is_eager_explorer_empire = yes
+        }
+
+    }
+
+    ai_weight = {
+
+    }
+}

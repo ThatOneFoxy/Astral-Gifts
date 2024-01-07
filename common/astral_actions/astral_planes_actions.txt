@@ -145,7 +145,10 @@ action_summon_dimensional_fleet = {
     picture = GFX_astral_action_summon_dimensional_fleet
 
     allow_unlock = {
-        has_technology = tech_psionic_theory
+        OR = {
+            has_technology = tech_psionic_theory
+            has_technology = tech_astral_hyperlane_breaching
+        }
     }
 
     effect = {
@@ -277,7 +280,6 @@ action_gain_biology_insight = {
     picture = GFX_astral_action_gain_physics_insight
 
     effect = {
-        custom_tooltip = ag_placeholder_text
         random = {
             chance = 90
             add_modifier = {
@@ -286,6 +288,7 @@ action_gain_biology_insight = {
             }
         }
         random = {
+            custom_tooltip = ag_placeholder_text
             chance = 10
             country_event = { id = ag_events.2000 }
         }
@@ -323,7 +326,6 @@ action_gain_engineering_insight = {
     picture = GFX_astral_action_engineering
 
     effect = {
-        custom_tooltip = ag_placeholder_text
         random = {
             chance = 90
             add_modifier = {
@@ -332,6 +334,7 @@ action_gain_engineering_insight = {
             }
         }
         random = {
+            custom_tooltip = ag_placeholder_text
             chance = 10
             country_event = { id = ag_events.2001 }
         }
@@ -642,6 +645,10 @@ action_dimensional_shifting = {
         }
     }
 
+    allow_unlock = {
+        has_technology = tech_cloaking_3
+    }
+
     picture = GFX_astral_action_dimensional_shifting
 
     effect = {
@@ -665,6 +672,11 @@ action_dimensional_shifting = {
 action_astral_siphon = {
     sound = action_activation_astral_siphon
     usages = 3
+
+    allow = {
+        custom_tooltip = ag_placeholder_text
+        mid_game_years_passed >= 1
+    }
 
     activation_cost = {
         cost = {
@@ -733,6 +745,10 @@ action_planar_mastery = {
         cost = {
             astral_threads = 1500
         }
+    }
+
+    allow_unlock = {
+        has_technology = tech_galactic_administration
     }
 
     picture = GFX_astral_action_planar_mastery

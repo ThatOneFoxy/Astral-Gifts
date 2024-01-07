@@ -135,34 +135,65 @@ country_event = {
 
     immediate = {
         random = {
-            chance = 5
+            chance = 10
             if = {
                 limit = {
                     NOT = {
                         has_country_flag = techharvestingunlocked
                     }
                 }
+                add_tech_progress = {
+                    tech = tech_astral_harvesting
+                    progress = 0.25
+                }
+                set_country_flag = techharvestingunlocked
             }
-            add_tech_progress = {
-                tech = tech_astral_harvesting
-                progress = 0.25
-            }
-            set_country_flag = techharvestingunlocked
             else = {
                 add_resource = { astral_threads = 150 }
             }
         }
         random = {
-            chance = 10
+            chance = 15
             add_resource = { astral_threads = 100 }
         }
         random = {
-            chance = 15
+            chance = 20
             add_resource = { astral_threads = 50 }
         }
         random = {
-            chance = 70
-            add_resource = { physics_research = 1000 }
+            chance = 55
+            random_owned_leader = {
+                if = {
+                    limit = {
+                        owner = {
+                            has_country_flag = lastpositivetrait
+                        }
+                    }
+                    random = {
+                        chance = 50
+                        add_trait = "random_negative"
+                        owner = {
+                            remove_country_flag = lastpositivetrait
+                            set_country_flag = lastnegativetrait
+                        }
+                    }
+                }
+                else_if = {
+                    limit = {
+                        owner = {
+                            has_country_flag = lastnegativetrait
+                        }
+                    }
+                    random = {
+                        chance = 50
+                        add_trait = "random_common"
+                        owner = {
+                            remove_country_flag = lastnegativetrait
+                            set_country_flag = lastpositivetraittrait
+                        }
+                    }
+                }
+            }
         }
     }
 }
