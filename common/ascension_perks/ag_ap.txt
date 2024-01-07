@@ -1,8 +1,0 @@
-ap_luminarium = {
-    possible = {
-        custom_tooltip = {
-            fail_text = "requires_ascension_perks_3"
-            num_ascension_perks > 2
-        }
-    }
-}

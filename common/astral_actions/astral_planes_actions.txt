@@ -17,6 +17,13 @@ action_astral_boost = {
         }
     }
 
+   allow_unlock = {
+        AND = {
+            has_technology = tech_reactor_boosters_2
+            has_technology = tech_hyper_drive_2
+        }
+    }
+
     cooldown = @ASTRAL_ACTION_5_YEARS_COOLDOWN
     picture = GFX_astral_action_astral_boost
 
@@ -313,7 +320,7 @@ action_gain_engineering_insight = {
     }
 
     cooldown = @ASTRAL_ACTION_5_YEARS_COOLDOWN
-    picture = GFX_astral_action_gain_physics_insight
+    picture = GFX_astral_action_engineering
 
     effect = {
         custom_tooltip = ag_placeholder_text

@@ -34,7 +34,8 @@
 
 # Astral | Luminarium
 
- ap_luminarium: "REPLACE_ME"
- ap_luminarium_desc: "REPLACE_ME"
+ ap_luminarium: "The Astral Calling"
+ ap_luminarium_desc: "You hear faint whispers"
+ requires_ascension_perks_4: "$TRIGGER_FAIL$Requires four other Ascension Perks to be selected first."
 
 

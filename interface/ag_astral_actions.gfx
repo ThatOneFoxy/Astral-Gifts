@@ -8,6 +8,10 @@ spriteTypes = {
         name = "GFX_astral_action_treasure"
         texturefile = "gfx/interface/icons/astral_actions/treasure_bag_astral_action.dds"
     }
+    spriteType = {
+        name = "GFX_astral_action_engineering"
+        texturefile = "gfx/interface/icons/astral_actions/engineering_astral_action.dds"
+    }
 
 
 }
