@@ -1,8 +1,17 @@
 ﻿l_english:
  ag_placeholder_text:0 "Placeholder"
 
+#Astral Action | Insights
+
+ action_biology_tt: "Unlock the next technology of Engineered Evolution"
+ action_engineering_tt: "Unlocks the next technology of Synthetic Evolution"
+ ag_midgame_has_passed: "The Mid-Game has triggered"
+
 #Astral Action | Treasure Action
  action_treasure_bag: "Treasure Bag"
+
+ treasure_bag_tt: "Obtains one of the 7 lost astral relics"
+ treasure_bag_allow_tt: "All the relics have been found."
 
  InfinityRootTitle: "The Infinity Root"
  InfinityRootDesc: ""

@@ -277,7 +277,7 @@ action_gain_biology_insight = {
     }
 
     cooldown = @ASTRAL_ACTION_5_YEARS_COOLDOWN
-    picture = GFX_astral_action_gain_physics_insight
+    picture = GFX_astral_action_biology
 
     effect = {
         random = {
@@ -288,7 +288,7 @@ action_gain_biology_insight = {
             }
         }
         random = {
-            custom_tooltip = ag_placeholder_text
+            custom_tooltip = action_biology_tt
             chance = 10
             country_event = { id = ag_events.2000 }
         }
@@ -334,7 +334,7 @@ action_gain_engineering_insight = {
             }
         }
         random = {
-            custom_tooltip = ag_placeholder_text
+            custom_tooltip = action_engineering_tt
             chance = 10
             country_event = { id = ag_events.2001 }
         }
@@ -371,9 +371,9 @@ action_treasure_bag = {
         always = yes
     }
 
-    allow = {#if still shows just slap a hidden trigger and hope that fixes it :P
-        custom_tooltip = ag_placeholder_text
-            NAND = { #to stop people drawing nothing
+    allow = {
+        custom_tooltip = treasure_bag_allow_tt
+            NAND = { #to stop people drawing nothing :P
                 exists = event_target:InfinityRootObtainer
                 exists = event_target:DaedalusSealObtainer
                 exists = event_target:EverSpinningTopObtainer
@@ -385,7 +385,7 @@ action_treasure_bag = {
         }
 
     effect = {
-        custom_tooltip = ag_placeholder_text #todo
+        custom_tooltip =  treasure_bag_tt
         country_event = { id = ag_astralplanes.100 }
     }
 
@@ -673,9 +673,11 @@ action_astral_siphon = {
     sound = action_activation_astral_siphon
     usages = 3
 
-    allow = {
-        custom_tooltip = ag_placeholder_text
-        mid_game_years_passed >= 1
+    allow_unlock = {
+        custom_tooltip = ag_midgame_has_passed
+        hidden_trigger = {
+            has_country_flag = midgamepassedag
+        }
     }
 
     activation_cost = {
