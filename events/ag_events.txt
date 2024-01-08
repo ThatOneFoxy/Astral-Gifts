@@ -217,4 +217,20 @@ country_event = {
     }
 }
 
+astral_rift_event = {
+    id = ag_events.1
+    hide_window = yes
+    is_triggered_only = yes
+
+    immediate = {
+        solar_system = {
+            system_event = {
+                id = ag_astralplanes.2
+                days = 2	# Trigger the event once the science ship has returned from exploration (MIA)
+                scopes = { from = root fromfrom = root.fleet }
+            }
+        }
+        finish_astral_rift = yes
+    }
+}
 

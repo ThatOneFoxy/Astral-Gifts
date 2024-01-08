@@ -265,3 +265,15 @@ country_event = {
         }
     }
 }
+
+system_event = {
+    id = ag_astralplanes.2
+    hide_window = yes
+    is_triggered_only = yes
+
+    immediate = {
+        destroy_astral_rift = from
+    }
+}
+
+
