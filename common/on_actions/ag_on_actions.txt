@@ -9,5 +9,14 @@ on_yearly_pulse_country = {
         ag_events.3000
         ag_events.101
     }
+    random_events = {
+        10 = ag_events.2000
+        10 = ag_events.2001
+    }
 }
 
+on_game_start = {
+    events = {
+        ag_events.3001
+    }
+}

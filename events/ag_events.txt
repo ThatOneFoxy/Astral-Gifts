@@ -217,6 +217,18 @@ country_event = {
     }
 }
 
+event = {
+    id = ag_events.3001
+    hide_window = yes
+    is_triggered_only = yes
+
+    immediate = {
+        every_country = {
+            set_country_flag = lastpositivetrait
+        }
+    }
+}
+
 astral_rift_event = {
     id = ag_events.1
     hide_window = yes

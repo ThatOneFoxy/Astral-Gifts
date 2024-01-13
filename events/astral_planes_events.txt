@@ -60,9 +60,11 @@ event = {
 	}
 
 	immediate = {
-		every_playable_country = {
+		every_country = {
 			random_planet_within_border = {
-				spawn_astral_scar = yes
+				solar_system = {
+					spawn_astral_scar = yes
+				}
 			}
 		}
 	}

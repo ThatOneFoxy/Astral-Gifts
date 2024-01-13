@@ -28,3 +28,8 @@ ag_ancesteral_past_cultural = {
     planet_technician_energy_produces_add = 0.5
     ship_speed_mult = 0.05
 }
+
+ag_angered_goose = {
+    planet_stability_add = -25
+    planet_devastation = 0.2
+}

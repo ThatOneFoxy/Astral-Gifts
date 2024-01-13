@@ -280,20 +280,10 @@ action_gain_biology_insight = {
     picture = GFX_astral_action_biology
 
     effect = {
-        random = {
-            chance = 90
             add_modifier = {
                 modifier = gain_biology_insight_modifier
                 days = @ASTRAL_ACTION_5_YEARS_COOLDOWN
             }
-        }
-        random = {
-            custom_tooltip = action_biology_tt
-            chance = 10
-            country_event = { id = ag_events.2000 }
-        }
-
-
 
         hidden_effect = {
             change_variable = {
@@ -326,20 +316,10 @@ action_gain_engineering_insight = {
     picture = GFX_astral_action_engineering
 
     effect = {
-        random = {
-            chance = 90
             add_modifier = {
                 modifier = gain_engineering_insight_modifier
                 days = @ASTRAL_ACTION_5_YEARS_COOLDOWN
             }
-        }
-        random = {
-            custom_tooltip = action_engineering_tt
-            chance = 10
-            country_event = { id = ag_events.2001 }
-        }
-
-
 
         hidden_effect = {
             change_variable = {
@@ -373,7 +353,9 @@ action_treasure_bag = {
 
     allow = {
         custom_tooltip = treasure_bag_allow_tt
-            NAND = { #to stop people drawing nothing :P
+        hidden_trigger = {
+            NAND = {
+                #to stop people drawing nothing :P
                 exists = event_target:InfinityRootObtainer
                 exists = event_target:DaedalusSealObtainer
                 exists = event_target:EverSpinningTopObtainer
@@ -383,10 +365,13 @@ action_treasure_bag = {
                 exists = event_target:PlasmicCoreObtainer
             }
         }
+    }
 
     effect = {
         custom_tooltip =  treasure_bag_tt
-        country_event = { id = ag_astralplanes.100 }
+        hidden_effect = {
+            country_event = { id = ag_astralplanes.100 }
+        }
     }
 
 }

@@ -3,48 +3,59 @@
 
 #Astral Action | Insights
 
- action_biology_tt: "Unlock the next technology of Engineered Evolution"
- action_engineering_tt: "Unlocks the next technology of Synthetic Evolution"
+ gain_biology_insight_modifier: "Biology Insights"
+
+ gain_engineering_insight_modifier: "Engineering Theory"
+
  ag_midgame_has_passed: "The Mid-Game has triggered"
 
 #Astral Action | Treasure Action
  action_treasure_bag: "Treasure Bag"
+ action_treasure_bag_desc: "Use £astral_threads£ Astral Threads to weave a new relic into existence."
 
  treasure_bag_tt: "Obtains one of the 7 lost astral relics"
  treasure_bag_allow_tt: "All the relics have been found."
 
  InfinityRootTitle: "The Infinity Root"
- InfinityRootDesc: ""
+ InfinityRootDesc: "I receive: Your leftover bread\nYou receive: The Infinity Root"
  InfinityRootOption: "Huh, So this is the root of all our problems."
 
  DaedalusSealTitle: "Daedalus Seal"
- DaedalusSealDesc: ""
+ DaedalusSealDesc: "I receive: more bread\nYou receive: The Daedalus Seal"
  DaedalusSealOption: "Interesting... Add it to our Archives!"
 
  EverSpinningTopTitle: "Ever Spinning Top"
- EverSpinningTopDesc: ""
+ EverSpinningTopDesc: "I receive: B r e a d\nYou receive: The Ever Spinning Top"
  EverSpinningTopOption: "Its... Mesmerizing"
 
  CelestialTearTitle: "Celestial Tear"
- CelestialTearDesc: ""
+ CelestialTearDesc: "I receive: Yeast combined with a few products\nYou Receive: Celestial Tear"
  CelestialTearOption: "I wonder where this is from."
 
  ContinuumTitle: "The Continuum"
- ContinuumDesc: ""
+ ContinuumDesc: "I receive: alot of bread, I need to stock up\nYou Receive: The Continuum"
  ContinuumOption: "To continue or to stop, that is the question"
+ ContinuumOption2: "Sorry my lord, we cannot allow this request."
+ ContinuumTitle2: "Angry Goose"
+ ContinuumDesc2: "Goose is angry, you have made a big mistake"
+ ContinuumOption3: "Uh oh"
+
+ ag_angered_goose: "Angered The Goose"
+ ag_angered_goose_desc: "May misfortune guide you the way to purgatory.\n-Love, Goose"
+
 
  TimeCrystalTitle: "Time Crystal"
- TimeCrystalDesc: ""
+ TimeCrystalDesc: "I receive: Some bred\n You receive: The Time Crystal"
  TimeCrystalOption: "Infinite visions of the past.. What was, will be"
 
  PlasmicCoreTitle: "Plasmic Core"
- PlasmicCoreDesc: ""
+ PlasmicCoreDesc: "I receive: 1 pop, I ran out of my secret ingredient :)\nYou receive: The Plasmic Core"
  PlasmicCoreOption: "They do say that the mitochondria is the powerhouse of the cell"
 
 # Astral | Luminarium
 
  ap_luminarium: "The Astral Calling"
- ap_luminarium_desc: "You hear faint whispers"
+ ap_luminarium_desc: "You hear faint whispers, Claim The Throne.... The steps shall be laid out for you.."
  requires_ascension_perks_4: "$TRIGGER_FAIL$Requires four other Ascension Perks to be selected first."
 
 # Astral | Tech
@@ -60,5 +71,7 @@
 
  ag_astral_planes.2140.a: "We should adopt the culture of our ancestors."
  ag_astral_planes.2140.b: "We will take out those who have wronged us in the past."
+
+
 
 

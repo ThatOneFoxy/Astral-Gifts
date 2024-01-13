@@ -95,7 +95,18 @@ country_event = {
                 limit = {
                     NOT = { exists = event_target:ContinuumObtainer }
                 }
-                country_event = { id = ag_astralplanes.204 }
+                if = {
+                    limit = {
+                        is_gestalt = yes
+                    }
+                    country_event = { id = ag_astralplanes.204A }
+                }
+                else_if = {
+                    limit = {
+                        is_gestalt = no
+                    }
+                    country_event = { id = ag_astralplanes.204 }
+                }
                 save_global_event_target_as = ContinuumObtainer
             }
             else = {
@@ -165,7 +176,7 @@ country_event = {
     id = ag_astralplanes.200
     title = InfinityRootTitle
     desc = InfinityRootDesc
-
+    picture = GFX_relic_ag_goose
     is_triggered_only = yes
 
     option = {
@@ -173,6 +184,7 @@ country_event = {
         hidden_effect = {
             add_relic = r_infinity_root
         }
+        add_resource = { consumer_goods = -1 }
     }
 }
 
@@ -180,6 +192,7 @@ country_event = {
     id = ag_astralplanes.201
     title = DaedalusSealTitle
     desc = DaedalusSealDesc
+    picture = GFX_relic_ag_goose
 
     is_triggered_only = yes
 
@@ -188,13 +201,16 @@ country_event = {
         hidden_effect = {
             add_relic = r_daedalus_seal
         }
+        add_resource = { consumer_goods = -10 }
     }
 }
+
 
 country_event = {
     id = ag_astralplanes.202
     title = EverSpinningTopTitle
     desc = EverSpinningTopDesc
+    picture = GFX_relic_ag_goose
 
     is_triggered_only = yes
 
@@ -203,6 +219,7 @@ country_event = {
         hidden_effect = {
             add_relic = r_ever_spinning_top
         }
+        add_resource = { consumer_goods = -50 }
     }
 }
 
@@ -210,6 +227,7 @@ country_event = {
     id = ag_astralplanes.203
     title = CelestialTearTitle
     desc = CelestialTearDesc
+    picture = GFX_relic_ag_goose
 
     is_triggered_only = yes
 
@@ -218,6 +236,7 @@ country_event = {
         hidden_effect = {
             add_relic = r_celestial_tear
         }
+        add_resource = { consumer_goods = -30 }
     }
 }
 
@@ -225,13 +244,66 @@ country_event = {
     id = ag_astralplanes.204
     title =  ContinuumTitle
     desc = ContinuumDesc
+    picture = GFX_relic_ag_goose
 
     is_triggered_only = yes
 
     option = {
         name = ContinuumOption
+        allow = { resource_stockpile_compare = { resource = consumer_goods value >= 2500 } }
+            hidden_effect = {
+                add_relic = r_continuum
+            }
+            add_resource = { consumer_goods = -2500 }
+        }
+    option = {
+        name = ContinuumOption2
         hidden_effect = {
-            add_relic = r_continuum
+            country_event = {
+                id = ag_astralplanes.2004
+            }
+        }
+    }
+}
+
+country_event = {
+    id = ag_astralplanes.204A
+    title =  ContinuumTitle
+    desc = ContinuumDesc
+    picture = GFX_relic_ag_goose
+
+    is_triggered_only = yes
+
+    option = {
+        name = ContinuumOption
+        allow = { resource_stockpile_compare = { resource = energy value >= 5000 } }
+            hidden_effect = {
+                add_relic = r_continuum
+            }
+            add_resource = { energy = -5000 }
+        }
+    option = {
+        name = ContinuumOption2
+        hidden_effect = {
+            country_event = {
+                id = ag_astralplanes.2004
+            }
+        }
+    }
+}
+
+country_event = {
+    id = ag_astralplanes.2004
+    title = ContinuumTitle2
+    desc = ContinuumDesc2
+    picture = GFX_relic_ag_goose_angry
+
+    is_triggered_only = yes
+
+    option = {
+        name = ContinuumOption3
+        hidden_effect = {
+            add_modifier = { modifier = ag_angered_goose years = 1}
         }
     }
 }
@@ -240,6 +312,7 @@ country_event = {
     id = ag_astralplanes.205
     title = TimeCrystalTitle
     desc = TimeCrystalDesc
+    picture = GFX_relic_ag_goose
 
     is_triggered_only = yes
 
@@ -248,6 +321,7 @@ country_event = {
         hidden_effect = {
             add_relic = r_time_crystal
         }
+        add_resource = { consumer_goods = -17 }
     }
 }
 
@@ -255,6 +329,7 @@ country_event = {
     id = ag_astralplanes.206
     title = PlasmicCoreTitle
     desc = PlasmicCoreDesc
+    picture = GFX_relic_ag_goose
 
     is_triggered_only = yes
 
@@ -262,18 +337,10 @@ country_event = {
         name = PlasmicCoreOption
         hidden_effect = {
             add_relic = r_plasmic_core
+            random_owned_pop = { kill_pop = yes }
         }
     }
 }
 
-system_event = {
-    id = ag_astralplanes.2
-    hide_window = yes
-    is_triggered_only = yes
-
-    immediate = {
-        destroy_astral_rift = from
-    }
-}
 
 
