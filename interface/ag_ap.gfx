@@ -16,4 +16,16 @@ spriteTypes = {
         texturefile = "gfx/event_pictures/ag_goose_angry.dds"
         alwaystransparent = yes
     }
+
+    spriteType = {
+        name = "GFX_ag_steal_throne"
+        texturefile = "gfx/interface/icons/modifiers/mod_war_economy_offensive.dds"
+        alwaystransparent = yes
+    }
+
+    spriteType = {
+        name = "GFX_ag_wr_eternal_flame"
+        texturefile = "gfx/interface/icons/modifiers/mod_war_economy_offensive.dds"
+        alwaystransparent = yes
+    }
 }

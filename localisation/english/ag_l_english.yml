@@ -1,7 +1,26 @@
 ﻿l_english:
  ag_placeholder_text:0 "Placeholder"
 
-#Astral Action | Insights
+ ag_midgame_astral_storage: "Extra dimensional Storage"
+
+
+ # Wargoals | Eternal Flame
+
+ war_goal_ag_wr_eternal_flame: "Night of the Eternal Flame"
+ war_goal_ag_wr_eternal_flame_desc: "We shall seize the throne, may the best (definitely our nation) win."
+
+ casus_belli_ag_steal_throne: "Seize the Throne"
+ casus_belli_ag_steal_throne_acquire_hint: "Eternal Throne CB"
+
+ ag_events.5102.name:0 "Seizing the §MEternal Throne§!"
+ ag_events.5102.desc:0 "The [From.From.GetName] has admitted defeat, and we have kicked them off the Eternal Throne from their unworthy lineage!"
+ ag_events.5102.a:0 "May [owner.ruler] be bathed in the gentle light shine forever."
+ ag_events.5101.name:0 "Losing the §MEternal Throne§!"
+ ag_events.5101.desc:0 "Aside from numerous functionaries breaking down into hysterics during the handover, the surrendering of the Eternal Throne to [From.GetAdj] forces was an uneventful affair."
+ ag_events.5101.a:0 "A wordless wail of anguish."
+
+
+ #Astral Action | Insights
 
  gain_biology_insight_modifier: "Biology Insights"
 

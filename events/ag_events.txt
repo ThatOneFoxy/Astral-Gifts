@@ -263,4 +263,53 @@ astral_rift_event = {
 }
 
 
+country_event = {
+    id = ag_events.5101
+    title = ag_events.5101.name
+    desc = ag_events.5101.desc
+    picture = GFX_evt_alien_propaganda
+    show_sound = event_lootbox_galatron
+
+    is_triggered_only = yes
+
+    immediate = {
+        if = {
+            limit = {
+                is_ai = no
+                NOT = { has_country_flag = relic_robbery_achievement }
+            }
+            set_country_flag = relic_robbery_achievement
+        }
+    }
+
+    option = {
+        name = ag_events.5101.a
+        tooltip = {
+            add_modifier = {
+                modifier = eternal_throne_modifier
+                days = -1
+            }
+        }
+    }
+}
+
+# Lost the Galatron in war
+country_event = {
+    id = ag_events.5102
+    title = ag_events.5102.name
+    desc = ag_events.5102.desc
+    picture = GFX_evt_alien_segregation
+    show_sound = event_life_support_fail
+
+    is_triggered_only = yes
+
+    option = {
+        name = ag_events.5102.a
+        tooltip = {
+            add_modifier = { modifier = humiliated days = 3600 }
+        }
+    }
+}
+
+
 
