@@ -2809,8 +2809,6 @@ on_colony_3_years_old = {
 		### Federations
 		4 = colony_fed.100 #Impossible Corrie
 
-		### Astral Rifts anomalies
-		20 = astral_planes.6029 # Astralnomical Marvel
 	}
 }
 
@@ -2829,8 +2827,7 @@ on_colony_4_years_old = {
 		### Archaeology Colony Sites
 		3 = ancrel.6049 # Blade of the Huntress
 
-		### Astral Rifts anomalies
-		20 = astral_planes.6029 # Astralnomical Marvel
+
 	}
 }
 
@@ -2851,9 +2848,6 @@ on_colony_5_years_old = {
 
 		### Archaeology Colony Sites
 		3 = ancrel.6049 # Blade of the Huntress
-
-		### Astral Rifts anomalies
-		20 = astral_planes.6029 # Astralnomical Marvel
 	}
 }
 

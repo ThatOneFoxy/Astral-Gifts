@@ -1075,11 +1075,11 @@
  astral_planes.6065.b: "Attempt to recover the ancient explosives."
  astral_planes.6065.c: "Let the situation resolve itself."
 
- astral_planes.6070.name: "A Rift Appears"
+ astral_planes.6070.name: "A Failed Operation"
  astral_planes.6070.desc.common_1: "After deploying a carefully engineered set of charges around [from.GetName], we triggered a chain reaction that destroyed the planet entirely."
  astral_planes.6070.desc.common_2: "We theorize that the opening of this rift was caused by a uniquely powerful singularity-generating explosive stored in one of the many weapon caches."
  astral_planes.6070.desc.no_rift: "$astral_planes.6070.desc.common_1$\n\nThe resulting explosion was so strong that it not only destroyed the planet, but also tore a hole in the fabric of space-time, resulting in the formation of what we are calling an §Y$astral_rift$§!.\n\n$astral_planes.6070.desc.common_2$"
- astral_planes.6070.desc.rift: "$astral_planes.6070.desc.common_1$\n\nThe resulting explosion was so strong that it not only destroyed the planet, but resulted in the formation of a new §Y$astral_rift$§!.\n\n$astral_planes.6070.desc.common_2$"
+ astral_planes.6070.desc.rift: "$astral_planes.6070.desc.common_1$\n\nThe resulting explosion was so strong that it not only destroyed the planet, but also the solar system"
 
  astral_planes.6075.name: "Successful Weapon Extraction"
  astral_planes.6075.desc: "We were able to create an extraction pipeline for the weapons stored within the planet's surface, rendering active munitions inert before preparing them for collection and analysis.\n\nEstablishing a permanent colony on this planet would allow us to take advantage of the remaining cache more efficiently."
