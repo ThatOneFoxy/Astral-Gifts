@@ -13,7 +13,7 @@ ag_destroy_star_system = {
     }
     solar_system = {
         create_ambient_object = {
-            type = nebula_3
+            type = nebula_1
             play_animation_once = yes
             location = this
         }
@@ -110,6 +110,26 @@ ag_destroy_star_system = {
             }
             else = {
                 change_pc = pc_shattered
+                if = {
+                 limit = {
+                     not = {
+                         any_deposit = {
+                             has_deposit_category = deposit_cat_rare_resource
+                         }
+                     }
+                 }
+                    random = {
+                        chance = 50
+                        add_deposit = d_astral_threads_deposit_2
+                    }
+                    random = {
+                        chance = 50
+                        add_deposit = d_astral_threads_deposit_3
+                    }
+                    else = {
+                        add_deposit = d_astral_threads_deposit_1
+                    }
+                }
             }
         }
         else_if = {
