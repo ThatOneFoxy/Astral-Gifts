@@ -4461,13 +4461,10 @@ ship_event = {
 		name = astral_planes.6065.b
 		hidden_effect = {
 			solar_system = {
-				remove_hyperlane = {
-					from = solar_system
-					to = solar_system
-				}
+				imperial_origin_start_hyperlane_effect = yes
+				destroy_star_system = yes
 			}
 			first_contact_send_fleets_mia = yes
-			destroy_star_system = yes
 		}
 	}
 }
