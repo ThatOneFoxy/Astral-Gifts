@@ -1,0 +1,28 @@
+spawn_budget_rift = {
+    spawn_planet = {
+        class = pc_astral_budget_rift
+        spawn_beyond_gravity_well = yes
+        orbit_angle_offset = 360
+        size = 20
+        init_effect = {
+            set_name = "pc_astral_budget_rift"
+            add_deposit = d_astral_threads_deposit_2
+            prevent_anomaly = yes
+            set_planet_flag = suppress_archaeological_sites
+            if = {
+                limit = {
+                    solar_system = {
+                        has_owner = yes
+                    }
+                }
+                create_message = {
+                    type = MESSAGE_ASTRAL_RIFT_DISCOVERED
+                    localization = MESSAGE_ASTRAL_RIFT_DISCOVERED_DESC
+                    days = 30
+                    target = this
+                    recipient = solar_system.owner
+                }
+            }
+        }
+    }
+}

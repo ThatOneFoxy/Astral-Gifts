@@ -1,0 +1,34 @@
+ag_scar_ruined_planet = {
+    desc = pacifist_unrest
+    picture =  GFX_evt_communication_event
+    stages = 1
+    max_instances = 1
+    weight = {
+        base = 0
+        modifier = {
+            add = 100
+            is_planet_class = pc_astral_budget_rift
+        }
+    }
+
+    allow = {
+        is_ship_class = shipclass_science_ship
+        exists = leader
+    }
+
+    visible = {
+        default_site_visible_trigger = yes
+    }
+
+    stage = {
+        difficulty = 2
+        event = ancrel.2041
+        icon = GFX_archaeology_runes_A1
+    }
+
+    on_roll_failed = {
+        from = {
+            standard_archaeological_site_on_roll_failed = { RANDOM_EVENTS = all_random_events }
+        }
+    }
+}
