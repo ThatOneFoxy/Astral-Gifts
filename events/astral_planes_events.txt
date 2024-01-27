@@ -3842,12 +3842,6 @@ ship_event = {
 		}
 		hidden_effect = {
 			solar_system = {
-				every_neighbor_system = {
-					every_neighbor_system = {
-						destroy_star_system = yes
-					}
-					destroy_star_system = yes
-				}
 				destroy_star_system = yes
 			}
 		}
@@ -4460,9 +4454,11 @@ ship_event = {
 	option = {
 		name = astral_planes.6065.b
 		hidden_effect = {
-			solar_system = {
-				imperial_origin_start_hyperlane_effect = yes
-				destroy_star_system = yes
+			add_monthly_resource_mult = {
+				resource = alloys
+				value = @tier1unityreward
+				min = 1000
+				max = 10000
 			}
 			first_contact_send_fleets_mia = yes
 		}
