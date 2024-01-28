@@ -99,7 +99,7 @@ country_event = {
                     limit = {
                         is_gestalt = yes
                     }
-                    country_event = { id = ag_astralplanes.204A }
+                    country_event = { id = ag_astralplanes.2041 }
                 }
                 else_if = {
                     limit = {
@@ -267,7 +267,7 @@ country_event = {
 }
 
 country_event = {
-    id = ag_astralplanes.204A
+    id = ag_astralplanes.2041
     title =  ContinuumTitle
     desc = ContinuumDesc
     picture = GFX_relic_ag_goose

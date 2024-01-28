@@ -1053,7 +1053,7 @@ ship_event = {
 	}
 
 	immediate = {
-		name = FASCINATING
+		#name = FASCINATING this is a ship event, cant have an option lol
 		owner = {
 			set_country_flag = started_harvest_astral_threads
 			if = {
@@ -3818,18 +3818,20 @@ ship_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		allow = {
-			owner = {
-				has_resource = { type = astral_threads amount >= 50 }
+		if = {
+			limit = {
+				owner = {
+					has_resource = { type = astral_threads amount >= 50 }
+				}
 			}
-		}
-		owner = {
-			add_resource = { astral_threads = -50 }
-			add_monthly_resource_mult = {
-				resource = physics_research
-				value = @tier1researchreward
-				min = @tier1researchmin
-				max = @tier1researchmax
+			owner = {
+				add_resource = { astral_threads = -50 }
+				add_monthly_resource_mult = {
+					resource = physics_research
+					value = @tier1researchreward
+					min = @tier1researchmin
+					max = @tier1researchmax
+				}
 			}
 		}
 	}
@@ -3884,7 +3886,7 @@ ship_event = {
 			}
 		}
 	}
-}
+
 
 # BLACK_HOLE_INSTABLE_CAT Follow up event
 ship_event = {
@@ -4446,6 +4448,8 @@ ship_event = {
 	option = {
 		name = ag_astral_planes.uhoh
 		hidden_effect = {
+			unassign_leader = this
+			destroy_ship = this
 			solar_system = {
 				ag_destroy_star_system = yes
 			}
@@ -4454,13 +4458,14 @@ ship_event = {
 	option = {
 		name = astral_planes.6065.b
 		hidden_effect = {
-			add_monthly_resource_mult = {
-				resource = alloys
-				value = @tier1unityreward
-				min = 1000
-				max = 10000
+			owner = {
+				add_monthly_resource_mult = {
+					resource = alloys
+					value = @tier1unityreward
+					min = 1000
+					max = 10000
+				}
 			}
-			first_contact_send_fleets_mia = yes
 		}
 	}
 }
