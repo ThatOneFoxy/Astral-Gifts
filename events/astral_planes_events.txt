@@ -4448,8 +4448,6 @@ ship_event = {
 	option = {
 		name = ag_astral_planes.uhoh
 		hidden_effect = {
-			unassign_leader = this
-			destroy_ship = this
 			solar_system = {
 				ag_destroy_star_system = yes
 			}
