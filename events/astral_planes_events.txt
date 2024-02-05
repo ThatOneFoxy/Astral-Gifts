@@ -60,9 +60,13 @@ event = {
 	}
 
 	immediate = {
-		every_country = {
-			random_planet_within_border = {
-				solar_system = {
+		random_system = {
+			if = {
+				limit = {
+					can_spawn_astral_scar_natural_generation = yes
+				}
+				random = {
+					chance = 50
 					spawn_astral_scar = yes
 				}
 			}

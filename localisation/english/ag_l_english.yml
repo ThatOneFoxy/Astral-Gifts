@@ -95,4 +95,10 @@
 
 
 
+ # --------------------------- MAINSCREEN --------------------------------
+ AG_VERSION:0 "Astral Gifts: §MDiscord Link§!"
+ AG_TOOLTIP:0 "§E$AG_TITLE$§!\n$aAG_TOOLTIP_HH$\n$AG_STEAMLINK$"
+ AG_TOOLTIP_HH:"Mod ran and maintained by the Hitchhiker's Guide To Stellaris"
+ AG_TITLE:0 "Astral Gifts"
+ AG_STEAMLINK:0 "Clicking this will send you to the Hitchhiker's Discord\nA place where Lobbies get hosted and mods get created."
 
