@@ -145,12 +145,12 @@ dimensional_fleet_power_naval_capacity_based = {
 }
 dimensional_fleet_power_rift_based = {
     complex_trigger_modifier = {
-        trigger = astral_rifts_completed
+        trigger = years_passed
         trigger_scope = root
         mode = add
     }
     subtract = 5
-    mult = 0.15
+    mult = 0.0625
     add = 1
     min = 1
 }
