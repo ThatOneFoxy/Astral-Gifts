@@ -27,3 +27,16 @@ tech_astral_hyperlane_breaching = {
     ai_weight = {
     }
 }
+
+tech_crisis_edicts = {
+    area = physics
+    cost = 1
+    category = { field_manipulation }
+    tier = 5
+    potential = {
+    }
+    weight = 1
+
+    weight_modifier = { factor = 0 }
+}
+

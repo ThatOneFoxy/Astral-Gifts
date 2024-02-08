@@ -93,7 +93,27 @@
  ag_astral_planes.2140.a: "We should adopt the culture of our ancestors."
  ag_astral_planes.2140.b: "We will take out those who have wronged us in the past."
 
-
+ NAME_ag_hitchiker: "Hitchhiker's Guide To Stellaris"
+ NAME_hitchiker_species: "Hitchhiker"
+ NAME_Hitchiker_Alpha: "Sapphire Alpha"
+ NAME_hitchiker_Defense_Fleet: "Council Of Kangs Defence Force"
+ NAME_Refugee_Site_Alpha_hh: "The Council"
+ NAME_Refugee_Site_Beta_hh: "Soncio's Ragin'"
+ NAME_Refugee_Fleet_hh: "The Fallen"
+ ag_fallen_leader: "General Anakin Skywalker"
+ NAME_hitchiker_chosen_fleet: "Chosen of the Empress"
+ Starfighter: "Naboo Starfighter"
+ ag_fl_1: "Death"
+ ag_fl_2: "Famine"
+ ag_fl_3: "Pestilence"
+ ag_fl_4: "Conquest"
+ ag_fl_5: "Collapse"
+ Hitchhiker_title: "The Hitchhiker Team"
+ ag_crisis.2402.desc:0 "We are the Hitchhiker's Guide to Stellaris\n\nFor over a thousand generations, we have remained hidden and uninvolved in galactic affairs. However, we have been monitoring the present situation with the entities you face, and can no longer remain impartial observers.\n\nTo protect the sapient beings of the galaxy, that is our duty. Do not be alarmed by the passage of our fleets - you will not be harmed."
+ ag_crisis.2402.a:0 "Viewscreen off."
+ ag_crisis.51.2.name: "A New Empire"
+ ag_crisis.51.desc: "Hello, my name is ThatOneFoxy. I represent on behalf of The Hitchhiker Team, I have taken a form your minds can understand.\n Do not fear lower beings, we have come to help liberate your galaxy from this ''Threat''"
+ NAME_Sentinel_Battle_Fleet_hh: "Hitchhiker reinforcement squadron"
 
  # --------------------------- MAINSCREEN --------------------------------
  AG_VERSION:0 "Astral Gifts: §MDiscord Link§!"
@@ -101,4 +121,37 @@
  AG_TOOLTIP_HH:"Mod ran and maintained by the Hitchhiker's Guide To Stellaris"
  AG_TITLE:0 "Astral Gifts"
  AG_STEAMLINK:0 "Clicking this will send you to the Hitchhiker's Discord\nA place where Lobbies get hosted and mods get created."
+
+ tech_crisis_edicts: "Foxy's Backdoor"
+ tech_crisis_edicts_desc: "Crisis options"
+
+ edict_ag_crisis_unbid: "Summon The Unbidden"
+ edict_ag_crisis_unbid_desc: "Summon Unbidden"
+
+ edict_ag_crisis_abb: "Summon The Abberant"
+ edict_ag_crisis_abb_desc: "Summon Abbarant"
+
+ edict_ag_crisis_vehe: "Summon the Vehement"
+ edict_ag_crisis_vehe_desc: "Summon Vehement"
+
+ edict_ag_crisis_swarm: "Summon The Scourge"
+ edict_ag_crisis_swarm_desc: "Summon Scourge"
+
+ edict_ag_crisis_cont: "Summon the Contingency"
+ edict_ag_crisis_cont_desc: "Summon Contingency"
+
+ edict_ag_crisis_cyb: "Summon The Cybrex"
+ edict_ag_crisis_cyb_desc: "Summons Cybrex"
+
+ edict_ag_crisis_sent: "Summon The Sentinel"
+ edict_ag_crisis_sent_desc: "Summons Sentinel"
+
+ edict_ag_crisis_hitchhiker: "Summon The HGTS"
+ edict_ag_crisis_hitchhiker_desc: "Summons Khan Destroyer 1000"
+
+ edict_ag_crisis_lock: "Lock Crisis Edicts"
+ edict_ag_crisis_lock_desc: "Locks the crisis edicts so AI doesn't do anything dumb"
+
+
+
 

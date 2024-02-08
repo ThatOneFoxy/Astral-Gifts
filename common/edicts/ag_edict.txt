@@ -1,0 +1,166 @@
+ag_crisis_cont = {
+    icon = "GFX_edict_type_policy"
+    length = 1
+
+    potential = {
+        AND = {
+            has_technology = tech_crisis_edicts
+            has_country_flag = TR_host
+            NOT = {
+                has_country_flag = locked_crisis
+            }
+        }
+    }
+    resources = { category = edicts cost = { energy = 1 } }
+    effect = {
+        country_event = { id = crisis.2005 }
+    }
+}
+
+ag_crisis_unbid = {
+    icon = "GFX_edict_type_policy"
+    length = 1
+
+    potential = {
+        AND = {
+            has_technology = tech_crisis_edicts
+            has_country_flag = TR_host
+            NOT = {
+                has_country_flag = locked_crisis
+            }
+        }
+    }
+    resources = { category = edicts cost = { energy = 1 } }
+    effect = {
+        country_event = { id = crisis.1000 }
+    }
+}
+
+ag_crisis_abb = {
+    icon = "GFX_edict_type_policy"
+    length = 1
+
+    potential = {
+        AND = {
+            has_technology = tech_crisis_edicts
+            has_country_flag = TR_host
+            NOT = {
+                has_country_flag = locked_crisis
+            }
+        }
+    }
+    resources = { category = edicts cost = { energy = 1 } }
+    effect = {
+        country_event = { id = ag_crisis.1100 }
+    }
+}
+
+ag_crisis_vehe = {
+    icon = "GFX_edict_type_policy"
+    length = 1
+
+    potential = {
+        AND = {
+            has_technology = tech_crisis_edicts
+            has_country_flag = TR_host
+            NOT = {
+                has_country_flag = locked_crisis
+            }
+        }
+    }
+    resources = { category = edicts cost = { energy = 1 } }
+    effect = {
+        country_event = { id = ag_crisis.1200 }
+    }
+}
+
+ag_crisis_swarm = {
+    icon = "GFX_edict_type_policy"
+    length = 1
+
+    potential = {
+        AND = {
+            has_technology = tech_crisis_edicts
+            has_country_flag = TR_host
+            NOT = {
+                has_country_flag = locked_crisis
+            }
+        }
+    }
+    resources = { category = edicts cost = { energy = 1 } }
+    effect = {
+        country_event = { id = crisis.199 }
+    }
+}
+
+ag_crisis_cyb = {
+    icon = "GFX_edict_type_policy"
+    length = 1
+
+    potential = {
+        AND = {
+            has_technology = tech_crisis_edicts
+            has_country_flag = TR_host
+            NOT = {
+                has_country_flag = locked_crisis
+            }
+        }
+    }
+    resources = { category = edicts cost = { energy = 1 } }
+    effect = {
+        country_event = { id = ag_crisis.2400 }
+    }
+}
+
+ag_crisis_sent = {
+    icon = "GFX_edict_type_policy"
+    length = 1
+
+    potential = {
+        AND = {
+            has_technology = tech_crisis_edicts
+            has_country_flag = TR_host
+            NOT = {
+                has_country_flag = locked_crisis
+            }
+        }
+    }
+    resources = { category = edicts cost = { energy = 1 } }
+    effect = {
+        country_event = { id = ag_crisis.50 }
+    }
+}
+
+ag_crisis_hitchhiker = {
+    icon = "GFX_edict_type_policy"
+    length = 1
+
+    potential = {
+        AND = {
+            has_technology = tech_crisis_edicts
+            has_country_flag = TR_host
+            NOT = {
+                has_country_flag = locked_crisis
+            }
+        }
+    }
+    resources = { category = edicts cost = { energy = 1 } }
+    effect = {
+        country_event = { id = ag_crisis.51 }
+    }
+}
+
+ag_crisis_lock = {
+    icon = "GFX_edict_type_policy"
+    length = 0
+
+    potential = {
+        AND = {
+            has_technology = tech_crisis_edicts
+            has_country_flag = TR_host
+        }
+    }
+    effect = {
+        set_country_flag = locked_crisis
+    }
+}
