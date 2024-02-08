@@ -3,13 +3,10 @@ namespace = ag_crisis
 country_event = {
     id = ag_crisis.50
     hide_window = yes
+    is_triggered_only = yes
 
     trigger = {
         NOT = { has_global_flag = sentinels_founded }
-    }
-
-    mean_time_to_happen = {
-        months = 12
     }
 
     immediate = {
@@ -61,22 +58,20 @@ country_event = {
             country_event = { id = crisis.51 days = 1 }
         }
         event_target:sentinel_alpha = {
-            fleet_event = { id = crisis.60 }
-            fleet_event = { id = crisis.60 days = 10 }
+            fleet_event = { id = ag_crisis.60 }
+            fleet_event = { id = ag_crisis.60 days = 10 }
         }
     }
 }
 country_event = {
-    id = ag_crisis.51
+    id = ag_crisis.501
     hide_window = yes
+    is_triggered_only = yes
 
     trigger = {
         NOT = { has_global_flag = hitchhiker_founded }
     }
 
-    mean_time_to_happen = {
-        months = 12
-    }
 
     immediate = {
         set_crisis_sound = swarm_crisis_ambient_stage_3
@@ -120,9 +115,10 @@ country_event = {
                 establish_communications = event_target:hitchhiker_fallen_empire
             }
         }
+        observer_event = { id = observer.31 }
         every_country = {
             limit = { is_country_type = default }
-            country_event = { id = ag_crisis.52 days = 1 }
+            country_event = { id = ag_crisis.51 days = 1 }
         }
         event_target:hitchhiker_alpha = {
             fleet_event = { id = ag_crisis.60  days = 720 }
@@ -761,3 +757,34 @@ country_event = {
         }
     }
 }
+
+country_event = {
+    id = ag_crisis.2820
+    hide_window = yes
+    is_triggered_only = yes
+
+    immediate = {
+        if = {
+           limit = {
+               NOT = {
+                   has_country_flag = system_explode
+               }
+           }
+            system_star = {
+                change_pc = pc_rift_star
+            }
+           set_country_flag = system_explode
+        }
+        every_owned_leader = {
+            limit = {
+                is_ruler = yes
+            }
+            kill_leader = { show_notification = no }
+        }
+        add_modifier = {
+            modifier = nerf_anakin_skywalker
+            mult = value:anakin_difficulty_scaling|FACTOR|-1.75|
+        }
+    }
+}
+

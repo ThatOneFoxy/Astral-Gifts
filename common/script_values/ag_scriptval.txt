@@ -1,0 +1,4 @@
+anakin_difficulty_scaling = {
+    add = trigger:is_difficulty
+    mult = $FACTOR$
+}

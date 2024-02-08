@@ -97,7 +97,8 @@
  NAME_hitchiker_species: "Hitchhiker"
  NAME_Hitchiker_Alpha: "Sapphire Alpha"
  NAME_hitchiker_Defense_Fleet: "Council Of Kangs Defence Force"
- NAME_Refugee_Site_Alpha_hh: "The Council"
+ NAME_Refugee_Site_Alpha_hh: "Galactic Community"
+ hh_star_system: "The High Council"
  NAME_Refugee_Site_Beta_hh: "Soncio's Ragin'"
  NAME_Refugee_Fleet_hh: "The Fallen"
  ag_fallen_leader: "General Anakin Skywalker"
@@ -114,6 +115,10 @@
  ag_crisis.51.2.name: "A New Empire"
  ag_crisis.51.desc: "Hello, my name is ThatOneFoxy. I represent on behalf of The Hitchhiker Team, I have taken a form your minds can understand.\n Do not fear lower beings, we have come to help liberate your galaxy from this ''Threat''"
  NAME_Sentinel_Battle_Fleet_hh: "Hitchhiker reinforcement squadron"
+ ag_leader: "ThatOneFoxy"
+ nerf_anakin_skywalker: "Hardened Survivor"
+ nerf_anakin_skywalker_desc: "Negative value to combat anakin skywalker outperforming the great khan"
+
 
  # --------------------------- MAINSCREEN --------------------------------
  AG_VERSION:0 "Astral Gifts: §MDiscord Link§!"
@@ -151,6 +156,10 @@
 
  edict_ag_crisis_lock: "Lock Crisis Edicts"
  edict_ag_crisis_lock_desc: "Locks the crisis edicts so AI doesn't do anything dumb"
+
+ edict_ag_crisis_unlock: "Unlock Crisis Edicts"
+ edict_ag_crisis_unlock_desc: "Unlocks the crisis edicts so that Foxy can do something dumb"
+
 
 
 

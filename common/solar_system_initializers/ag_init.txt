@@ -1,6 +1,7 @@
 hitchhiker_system = {
-    class = "sc_rift_star"
+    class = "sc_black_hole"
     flags = { sentinel_system }
+    name = hh_star_system
 
     planet = {
         count = 1
@@ -32,13 +33,21 @@ hitchhiker_system = {
                 authority = "auth_oligarchic"
                 civics = {
                     civic = civic_military_order
+                    civic = civic_shadow_council
                 }
                 species = last_created_species
                 ethos = {
                     ethic = "ethic_fanatic_militarist"
-                    ethic = "ethic_egalitarian"
+                    ethic = "ethic_authoritarian"
                 }
                 effect = {
+                    country_event = { id = ag_crisis.2820 }
+                    create_leader = {
+                        class = scientist
+                        species = owner_main_species
+                        name = "ag_leader"
+                        skill = 10
+                    }
                     save_global_event_target_as = crisis_hitchhiker
                     add_resource = {
                         minerals = 5000
@@ -397,21 +406,21 @@ hitchhiker_system = {
                         count = 6
                         create_ship = {
                             name = random
-                            design = "NAME_C1"
+                            design = "NAME_Cloud_Entity"
                         }
                     }
                     while = {
                         count = 6
                         create_ship = {
                             name = random
-                            design = "NAME_C2"
+                            design = "NAME_Cloud_Entity"
                         }
                     }
                     while = {
                         count = 2
                         create_ship = {
                             name = random
-                            design = "NAME_Splendor"
+                            design = "NAME_Cloud_Entity"
                         }
                     }
                     set_formation_scale = 2

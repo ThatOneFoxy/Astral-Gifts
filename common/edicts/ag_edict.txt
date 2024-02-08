@@ -146,7 +146,7 @@ ag_crisis_hitchhiker = {
     }
     resources = { category = edicts cost = { energy = 1 } }
     effect = {
-        country_event = { id = ag_crisis.51 }
+        country_event = { id = ag_crisis.501 }
     }
 }
 
@@ -158,9 +158,28 @@ ag_crisis_lock = {
         AND = {
             has_technology = tech_crisis_edicts
             has_country_flag = TR_host
+            NOT = {
+                has_country_flag = locked_crisis
+            }
         }
     }
     effect = {
         set_country_flag = locked_crisis
+    }
+}
+
+ag_crisis_unlock = {
+    icon = "GFX_edict_type_policy"
+    length = 0
+
+    potential = {
+        AND = {
+            has_technology = tech_crisis_edicts
+            has_country_flag = TR_host
+            has_country_flag = locked_crisis
+        }
+    }
+    effect = {
+        remove_country_flag = locked_crisis
     }
 }

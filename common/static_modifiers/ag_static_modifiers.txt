@@ -33,3 +33,9 @@ ag_angered_goose = {
     planet_stability_add = -25
     planet_devastation = 0.2
 }
+
+nerf_anakin_skywalker = {
+    ship_hull_mult = 1
+    ship_armor_mult = 1
+    ship_shield_mult = 1
+}
