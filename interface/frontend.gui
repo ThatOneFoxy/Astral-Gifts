@@ -195,7 +195,7 @@ guiTypes = {
             buttonType = {
                 name = "ag_button"
                 quadTextureSprite = "GFX_invisible"
-                position = { x = 310 y = 1000 }
+                position = { x = 310 y = 0 }
                 size = { x = 450 y = 20 }
                 buttonFont = "cg_16b"
                 buttonText = "AG_VERSION"

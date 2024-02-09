@@ -1,6 +1,6 @@
 hitchhiker_system = {
     class = "sc_black_hole"
-    flags = { sentinel_system }
+    flags = { hitchhiker_system }
     name = hh_star_system
 
     planet = {
@@ -41,12 +41,14 @@ hitchhiker_system = {
                     ethic = "ethic_authoritarian"
                 }
                 effect = {
-                    country_event = { id = ag_crisis.2820 }
+                    country_event = { id = ag_crisis.2820 days = 30  }
                     create_leader = {
                         class = scientist
                         species = owner_main_species
                         name = "ag_leader"
                         skill = 10
+                        can_assign_to_council = yes
+                        immortal = yes
                     }
                     save_global_event_target_as = crisis_hitchhiker
                     add_resource = {
@@ -56,6 +58,7 @@ hitchhiker_system = {
                     }
                 }
             }
+
             every_country = {
                 establish_communications = event_target:crisis_hitchhiker
             }
@@ -77,6 +80,7 @@ hitchhiker_system = {
                     }
                 }
             }
+
             last_created_country = {
                 create_leader = {
                     class = commander
@@ -525,10 +529,10 @@ hitchhiker_system = {
     }
 
     init_effect = {
-        save_global_event_target_as = sentinel_system
+        save_global_event_target_as = hitchhiker_system
         create_starbase = {
             size = "starbase_citadel"
-            owner = event_target:crisis_sentinels
+            owner = event_target:crisis_hitchhiker
 
             module = "shipyard"
             module = "shipyard"

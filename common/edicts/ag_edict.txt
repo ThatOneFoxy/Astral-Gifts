@@ -152,7 +152,7 @@ ag_crisis_hitchhiker = {
 
 ag_crisis_lock = {
     icon = "GFX_edict_type_policy"
-    length = 0
+    length = 1
 
     potential = {
         AND = {
@@ -170,7 +170,7 @@ ag_crisis_lock = {
 
 ag_crisis_unlock = {
     icon = "GFX_edict_type_policy"
-    length = 0
+    length = 1
 
     potential = {
         AND = {
