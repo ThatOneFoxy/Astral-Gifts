@@ -5,7 +5,6 @@ tech_astral_hyperlane_breaching = {
     tier = 4
     is_rare = yes
     prerequisites = {
-        tech_experimental_subspace_navigation
         tech_gateway_construction
     }
     weight = @tier2weight2
@@ -21,10 +20,11 @@ tech_astral_hyperlane_breaching = {
             factor = @eager_explorer_effect
             is_eager_explorer_empire = yes
         }
-
+        factor = 0.1
     }
 
     ai_weight = {
+        add = 100
     }
 }
 

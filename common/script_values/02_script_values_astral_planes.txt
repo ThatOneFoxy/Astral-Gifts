@@ -150,7 +150,40 @@ dimensional_fleet_power_rift_based = {
         mode = add
     }
     subtract = 5
-    mult = 0.0625
+    modifier = {
+        mult = 0.1
+        AND = {
+            mid_game_years_passed < 0
+            years_passed > 0
+            years_passed < 50
+        }
+    }
+    modifier = {
+        mult = 0.075
+        AND = {
+            mid_game_years_passed < 0
+            years_passed > 50
+        }
+    }
+    modifier = {
+        mult = 0.05
+        AND = {
+            mid_game_years_passed > 0
+            mid_game_years_passed < 75
+            end_game_years_passed < 0
+        }
+    }
+    modifier = {
+        mult = 0.0375
+        AND = {
+            mid_game_years_passed > 75
+            end_game_years_passed < 0
+        }
+    }
+    modifier = {
+        mult = 0.025
+        end_game_years_passed > 0
+    }
     add = 1
     min = 1
 }

@@ -35,7 +35,7 @@ ag_angered_goose = {
 }
 
 nerf_anakin_skywalker = {
-    ship_hull_mult = 1
-    ship_armor_mult = 1
-    ship_shield_mult = 1
+    ship_hull_mult = 5
+    ship_armor_mult = 5
+    ship_shield_mult = 5
 }

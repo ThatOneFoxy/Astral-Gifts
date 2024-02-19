@@ -119,7 +119,6 @@
  nerf_anakin_skywalker: "Hardened Survivor"
  nerf_anakin_skywalker_desc: "Negative value to combat anakin skywalker outperforming the great khan"
 
-
  # --------------------------- MAINSCREEN --------------------------------
  AG_VERSION:0 "Astral Gifts: §MDiscord Link§!"
  AG_TOOLTIP:0 "§E$AG_TITLE$§!\n$aAG_TOOLTIP_HH$\n$AG_STEAMLINK$"

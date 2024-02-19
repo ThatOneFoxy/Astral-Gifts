@@ -99,14 +99,20 @@ country_event = {
     }
 }
 
-event = {
+country_event = {
     id = ag_events.3001
     hide_window = yes
     is_triggered_only = yes
 
     immediate = {
-        every_country = {
+        if = {
+            limit = {
+                NOT = {
+                    has_country_flag = foxyisdumb
+                }
+            }
             set_country_flag = lastpositivetrait
+            set_country_flag = foxyisdumb
         }
     }
 }
