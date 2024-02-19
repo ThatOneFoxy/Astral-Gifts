@@ -1,5 +1,7 @@
 Stellaris mod to fix the big MP games crashes from happening regarding Astral Planes DLC
 
+Patch for 3.10, Discontinued from 3.11 and forwards.
+
 -- It takes an astral gift to destroy the astral rift --
 
 - Removes Astral rifts & astral splitting
